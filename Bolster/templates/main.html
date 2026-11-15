@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Home</title>
+</head>
+
+<div class="navbar">
+    <button onclick="window.location.href = '{{ profile }}' ; "class="navbar-button">Profile</button>
+    <button onclick="window.location.href = '{{ filter }}' ; "class="navbar-button">Filter</button>
+    <button onclick="window.location.href = '{{ map }}' ; " class="navbar-button">Map</button>
+    <button onclick="window.location.href = '{{ rate }}' ; " class="navbar-button">Rate</button>
+</div>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+body{
+    background-color: #372248;
+}
+h1{
+    color: rgb(73, 8, 8);
+}
+.navbar div{
+    background-color: 204, 137, 274;
+    padding-left: 5%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 160px;
+}
+.navbar-button{
+    background-color: #edc110;
+    color: #F7F3E3;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.navbar button{
+    float: left;
+    padding: 12px;
+    color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; 
+  text-align: center; 
+}
+.sidebar-button{
+    background-color: #edc110;
+    color: #F7F3E3;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, p {
+    padding-left: 20px;
+}
+
+#map {
+    position: fixed;
+    align-items: center;
+    height: 600px;
+    width: 80%;
+    border-radius: 10px;
+    border-color: #edc110;
+    border :20px solid #edc110;
+    
+}

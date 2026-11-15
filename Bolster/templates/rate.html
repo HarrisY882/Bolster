@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Hello World</title>
+</head>
+
+<div class="sidebar">
+    <button onclick="window.location.href = '{{ profile }}' ; "class="sidebar-button"> Profile </button>
+    <button onclick="window.location.href = '{{ filter }}' ; "class="sidebar-button">Filter</button>
+    <button onclick="window.location.href = '{{ map }}' ; " class="sidebar-button">Map</button>
+    <button onclick="window.location.href = '{{ rate }}' ; " class="sidebar-button">Rate</button>
+</div>
+
+
+
+    <h1>Bolster</h1>
+    <p>Find food that fits you.</p>
+
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Your JavaScript -->
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+
+   
+<form>
+    <label for="rating">Rate your experience:</label>
+    <select name="rating" id="rating">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+<body>
+
+
+</body>
+</html>
